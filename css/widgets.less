@@ -179,7 +179,7 @@ button {
 	@media @mobile {
 		left: 0;
 	}
-} 
+}
 
 
 // Signup Form
@@ -199,7 +199,7 @@ button {
 		margin-top: 20px;
 		max-width: 100%;
 	}
-} 
+}
 
 
 // Blog Search Form
@@ -249,7 +249,7 @@ button {
   color: darken(white, 30%);
 }
 
-:-ms-input-placeholder {  
+:-ms-input-placeholder {
   color: darken(white, 30%);
 }
 
@@ -315,6 +315,22 @@ button {
 			background-image: image('/images/icons/youtube-hover.svg');
 		}
 	}
+	.bk-socialicons-pinterest {
+        a {
+            background-image: image('/images/icons/socialicons-pinterest.svg');
+            &:hover {
+                background-image: image('/images/icons/socialicons-pinterest-hover.svg');
+            }
+        }
+    }
+    .bk-socialicons-instagram {
+        a {
+            background-image: image('/images/icons/socialicons-instagram.svg');
+            &:hover {
+                background-image: image('/images/icons/socialicons-instagram-hover.svg');
+            }
+        }
+    }
 }
 
 .bk-socialicons-linkedin a {
@@ -334,6 +350,12 @@ button {
 }
 .bk-socialicons-youtube a {
 	background-image: image('/images/icons/youtube.png');
+}
+.bk-socialicons-pinterest a {
+    background-image: image('/images/icons/socialicons-pinterest.png');
+}
+.bk-socialicons-instagram a {
+    background-image: image('/images/icons/socialicons-instagram.png');
 }
 
 
@@ -442,7 +464,7 @@ div[role="main"] .widget {
 // Slideshow
 
 .widget.responsiveslideshow {
-	.btn-play, &:hover span.btn-play, 
+	.btn-play, &:hover span.btn-play,
 	.title, .description {
 		display: none;
 	}
@@ -506,7 +528,7 @@ div[role="main"] .widget {
 			&.selected {
 				background-color: @font-swatch8-color;
 				border: 1px solid @font-swatch8-color;
-			} 
+			}
 			&:hover {
 				background-color: @font-swatch8-color;
 				border: 1px solid @font-swatch8-color;
