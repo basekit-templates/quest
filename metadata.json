@@ -1,7 +1,7 @@
 {
 	"name":"Quest",
 	"thumbnail":"quest.png",
-	"screenshot":"quest.png",
+	"screenshot":"quest-screenshot.jpg",
     "templateType":"standard",
     "tags": { "en": ["minimal", "modern", "light", "social", "contrast", "space", "slideshow"] },
     "pageTypes":["home"],
