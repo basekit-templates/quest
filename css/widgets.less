@@ -58,8 +58,7 @@ button.btn,
 	}
 }
 
-.widget.ecomcheckout .checkout-order-button:disabled,
-button:disabled {
+.widget.ecomcheckout .checkout-order-button:disabled {
 	background-color: fadeout(@font-swatch7-background-color, 50%);
 	cursor: not-allowed;
 	&:hover {
@@ -393,7 +392,7 @@ button {
 // -----------------------------
 
 
-div[role="main"] .widget {
+div[role="main"] .widget:not([data-name="row"]) {
 	margin-bottom: 10px;
 }
 
