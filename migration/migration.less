@@ -14,7 +14,16 @@
 
 
     &.edit .widget.extendednavigation a.pull {
-      right: 120px;
+        @media only screen and (min-width: 930px) {
+            right: 120px;
+        }
+    }
+
+    &.row-editing,
+    &.is-move-mode {
+      a.pull {
+        display: none;
+      }
     }
 
 
