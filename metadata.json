@@ -1,5 +1,6 @@
 {
 	"name":"Quest",
+	"versionTenCompatible": 1,
 	"thumbnail":"quest.png",
 	"screenshot":"quest-screenshot.jpg",
     "templateType":"standard",
