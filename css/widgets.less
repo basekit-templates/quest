@@ -114,12 +114,10 @@ button {
 
 .widget.contactform,
 .advancedcontactform {
-	label {
-		text-indent: -9999em;
-		overflow: hidden;
-		height: 0;
+	.label {
+		display: block;
 	}
-	input, textarea {
+	.input--single-line, .email, textarea {
 		background-color: lighten(@color-swatch5, 65%);
 		border: 1px solid lighten(@color-swatch5, 58%);
 		color: @color-swatch4;
@@ -136,23 +134,21 @@ button {
 	    	color: @color-swatch4;
 	    }
 	}
-	input:before {
+	input[type="email"]:before {
 		background-image: image('/images/email-submit-icon.png');
-		background-size: 30px 30px;
+		background-size: 30px;
 		background-position: 11px 8px;
 		background-repeat: no-repeat;
 		content: "";
 		display: inline-block;
 	}
-	textarea {
-		&:before {
-			background-image: image('/images/email-submit-icon.png');
-			background-size: 30px 30px;
-			background-position: 11px 8px;
-			background-repeat: no-repeat;
-			content: "";
-			display: inline-block;
-		}
+	textarea:before {
+		background-image: image('/images/email-submit-icon.png');
+		background-size: 30px;
+		background-position: 11px 8px;
+		background-repeat: no-repeat;
+		content: "";
+		display: inline-block;
 	}
 	button.btn,
 	fieldset button {
@@ -192,6 +188,11 @@ button {
 
 .advancedcontactform .option-list {
 	padding: 1em 0;
+}
+
+.advancedcontactform .option-item {
+	display: flex;
+	gap: 4px;
 }
 
 
